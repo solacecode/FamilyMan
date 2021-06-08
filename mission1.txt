@@ -32,7 +32,10 @@ sudo modprobe v4l2loopback card_label="LENOVO Cam" exclusive_caps=1001
  sudo apt update
  sudo apt install obs-studio
  
+sudo apt install -y v4l2loopback-dkms
 
+
+///
 sudo apt install qtbase5-dev
 
 sudo apt install libobs-dev
