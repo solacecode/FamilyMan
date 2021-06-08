@@ -26,4 +26,25 @@ y
 
 sudo modprobe v4l2loopback card_label="LENOVO Cam" exclusive_caps=1001
 
+ sudo apt install ffmpeg
+  sudo apt install ffmpeg
+  sudo add-apt-repository ppa:obsproject/obs-studio
+ sudo apt update
+ sudo apt install obs-studio
+ 
+
+sudo apt install qtbase5-dev
+
+sudo apt install libobs-dev
+
+git clone --recursive https://github.com/obsproject/obs-studio.git
+
+git clone https://github.com/CatxFish/obs-v4l2sink.git
+cd obs-v4l2sink
+mkdir build && cd build
+cmake -DLIBOBS_INCLUDE_DIR="../../obs-studio/libobs" -DCMAKE_INSTALL_PREFIX=/usr ..
+make -j4
+sudo make install
+
+
 
