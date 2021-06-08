@@ -1,0 +1,29 @@
+ A ; B  – Run A and then B, regardless of the success or failure of A
+ A && B  – Run B only if A succeeded
+ A || B  – Run B only if A failed
+ 
+ 
+
+sudo apt update
+sudo apt install snapd    //         installing snap
+sudo snap install vlc       //     installing vlc
+sudo apt-get install wget     /// installing  wget
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb   // downloading    google latest
+sudo apt install ./google-chrome-stable_current_amd64.deb    // installing      google chrome
+sudo apt-get install -y dpkg  
+
+
+//   check this part by your self 
+
+dpkg -l hplip      
+
+
+cd Downloads
+ls
+sh hplip-3.16.11.run
+y
+//     ok 
+
+sudo modprobe v4l2loopback card_label="LENOVO Cam" exclusive_caps=1001
+
+
